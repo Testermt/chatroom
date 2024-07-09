@@ -1,0 +1,48 @@
+/* Ensure the body takes the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Style for the login form to be vertically centered */
+#name-from {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Full height for the chat room */
+#chat-room {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Scrollable card view with dynamic height */
+.card {
+    height: calc(100vh - 150px); /* Adjust 150px based on the combined height of header and input box */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Scrollable message container */
+#message-container {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+/* Ensure the message container table takes full width */
+#message-container-table {
+    width: 100%;
+}
+
+/* Bottom input box styling */
+.input-group {
+    margin-top: auto;
+}
+
+/* Optional: Style adjustments */
+.btn {
+    margin-left: 5px;
+}
